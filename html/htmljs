@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekly Pre-Scheduling</title>
+    <script>
+        function loadPlanForWeek() {
+            const week = document.getElementById('week-select').value;
+            window.location.href = 'your_php_page.php?week=' + week;
+        }
+    </script>
+</head>
+<body>
+    <h1>Weekly Pre-Scheduling</h1>
+    <form>
+        <label for="week-select">Select Week:</label>
+        <?php renderWeeksDropdown(); ?>
+    </form>
+
+    <div id="plan-table">
+        <?php
+        if (isset($_GET['week'])) {
+            $week = $_GET['week'];
+            renderPlanTable($week);
+        }
+        ?>
+    </div>
+</body>
+</html>
