@@ -1,0 +1,21 @@
+<plan>
+  <week name="Week 15" from="2020-05-10" to="2020-05-16">
+    <team name="Marketing Team">
+      <employee name="Emp 1">
+        <day name="Sun" hours="00:00"/>
+        <day name="Mon" hours="07:30"/>
+        <day name="Tue" hours="07:00"/>
+        <!-- More days -->
+      </employee>
+      <employee name="Emp 2">
+        <day name="Sun" hours="00:00"/>
+        <day name="Mon" hours="08:30"/>
+        <day name="Tue" hours="08:00"/>
+        <!-- More days -->
+      </employee>
+      <!-- More employees -->
+    </team>
+    <!-- More teams -->
+  </week>
+  <!-- More weeks -->
+</plan>
